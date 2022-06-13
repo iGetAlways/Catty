@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Catty Earth</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="title" content="Catty Earth"> 
+	<meta name="description"
+		content="Catty - Dünya haritası ve krallıklar temalı minecraft sunucusu.">
+	<meta name="keywords" content="Catty, Minecraft, server, sunucu, towny, kingdoms, dünya, harita, catty network, cattymc,">
+	<meta name="language" content="TR_TR">
+	<meta name="url" content="https://catty.earth">
+	<meta name="og:title" content="Catty Earth" /> 
+	<meta name="og:url" content="https://catty.earth" />
+	<meta name="og:image" content="/assets/img/icon.png" />
+	<meta name="og:description"
+	content="Catty - Dünya haritası ve krallıklar temalı minecraft sunucusu.">	<!-- EDIT PER-PAGE META -->
+	<meta name="theme-color" content="#aa4444" />
+	<meta name="og:color" content="#aa4444">
+
+	<link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+	<link href="/assets/css/portal.css" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/d40f9ad946.js" crossorigin="anonymous"></script>
+
+	<script src="/assets/js/minecraft.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<!-- <script>
+		window.onload = () => {
+			if (screen.width < 700) {
+				document.location = '/mobile';
+			}
+		}
+	</script> -->
+
+    
+	<!-- the background + filter -->
+	<div class="blur"></div>
+	<section id="stars"></section>
+
+	<div class="main">
+		<div id="cont" class="container">
+			<ul class="navbar">
+				<li><a href="https://catty.earth/discord">Discord</a></li>
+				<li><a href="https://wiki.catty.earth/">Wiki</a></li>
+				<li><a href="#">Mağaza</a></li>
+				<li><a href="#">Harita</a></li>
+				<li><a href="#">Vote</a></li>
+				<li><a href="#">Cezalar</a></li>
+			</ul>
+			<div class="center">
+				<a href="https://catty.earth"><img src="/assets/img/icon.png" id="logo"></a>
+
+			</div>
+            <h1>404</h1> 
+            <h2>Aradığınız sayfa bulunamamıştır!</h2>
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+
+		function stars() {
+        const count = 170;
+        const stars = document.getElementById('stars');
+        var i = 0;
+        while(i < count) {
+          const star = document.createElement('i');
+          const x = Math.floor(Math.random() * window.innerWidth)
+          const y = Math.floor(Math.random() * window.innerHeight)
+          const size = Math.random() * 5;
+          star.style.left = x+'px';
+          star.style.top = y+'px';
+          star.style.height = 1+size+'px';
+          star.style.width = 1+size+'px';
+          const duration = Math.random() * 2;
+          star.style.animationDuration = 2+duration+'s';
+          stars.appendChild(star);
+          i++
+        }
+      }
+      stars();
+
+
+	</script>
+
+
+</body>
+</html>
